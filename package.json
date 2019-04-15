@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/KAZUMA-HIRAKAWA/raspberryPi#readme",
   "dependencies": {
+    "bbc-microbit": "^0.2.0",
     "bignum": "^0.13.0",
     "bleacon": "^0.5.1",
     "bleno": "^0.5.0",
+    "bluetooth-hci-socket": "^0.5.1",
     "debug": "^4.1.1",
     "noble": "^1.9.1",
     "noble-device": "^1.4.1"
