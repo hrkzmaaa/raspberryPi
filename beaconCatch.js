@@ -6,11 +6,11 @@ Bleacon.on('discover', function(bleacon) {
   // immediateのときにエンドポイントに送信
   if (bleacon.proximity === 'immediate') {
     console.log(bleacon)
-    sendBeaconInfo()
+    sendBeaconInfo(bleacon)
   }
 })
 
-const sendBeaconInfo = async () => {
+const sendBeaconInfo = async bleacon => {
   const axios = axiosBase.create({
     baseURL: 'https://r2hw56el75.execute-api.ap-northeast-1.amazonaws.com/test', // APIGatewayのエンドポイント
     headers: {
