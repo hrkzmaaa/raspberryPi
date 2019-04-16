@@ -3,6 +3,6 @@ const Bleacon = require("bleacon");
 Bleacon.startScanning();
 Bleacon.on("discover", function (bleacon) {
 
-  console.log(bleacon);
+  console.log(bleacon.proximity);
 
 });
