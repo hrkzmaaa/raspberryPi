@@ -2,15 +2,14 @@ const Bleacon = require('bleacon')
 
 Bleacon.startScanning()
 Bleacon.on('discover', function(bleacon) {
-
   // immediateのときにエンドポイントに送信
   if (bleacon.proximity === 'immediate') {
     console.log(bleacon)
-    sendBeaconInfo();
+    sendBeaconInfo()
   }
 })
 
-async const sendBeaconInfo = () => {
+const sendBeaconInfo = async () => {
   const axios = axiosBase.create({
     baseURL: 'https://r2hw56el75.execute-api.ap-northeast-1.amazonaws.com/test', // APIGatewayのエンドポイント
     headers: {
@@ -20,5 +19,5 @@ async const sendBeaconInfo = () => {
     responseType: 'json'
   })
 
-  await axios.put('/', bleacon);
+  await axios.put('/', bleacon)
 }
