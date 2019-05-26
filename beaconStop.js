@@ -1,3 +1,3 @@
-const Bleacon = require('bleacon')
+const Bleacon = require('bleacon');
 
-Bleacon.stopScanning()
+Bleacon.stopScanning();
