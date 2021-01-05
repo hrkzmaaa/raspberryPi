@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/KAZUMA-HIRAKAWA/raspberryPi#readme",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bbc-microbit": "^0.2.0",
     "bignum": "^0.13.0",
     "bleacon": "^0.5.1",
